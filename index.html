@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Raihan Al-Fadhil | CV</title>
 
+<meta name="description" content="Website resmi CV Muhammad Raihan Al-Fadhil. Profil profesional, pengalaman kerja, dan pendidikan.">
+<meta name="keywords" content="CV Raihan, Muhammad Raihan, CV Jakarta">
+<meta name="author" content="Muhammad Raihan Al-Fadhil">
+
+<meta property="og:title" content="Muhammad Raihan Al-Fadhil - CV">
+<meta property="og:description" content="Website CV & Profil Profesional">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Muhammad Raihan Al-Fadhil",
+ "email": "mailto:raihan8muhammad@gmail.com",
+ "telephone": "+6287811003848",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Jakarta",
+   "addressCountry": "Indonesia"
+ }
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">MR</div>
+  <div class="nav-right">
+    <button id="langToggle">EN</button>
+    <button id="themeToggle">🌙</button>
+    <a href="assets/cv.pdf" class="nav-download" download onclick="trackDownload()">
+      📄 Download CV
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1 data-id="name">Muhammad Raihan Al-Fadhil</h1>
+  <p data-id="tagline">Individu aktif dalam organisasi & pengembangan diri</p>
+
+  <div class="hero-buttons">
+    <button onclick="openPreview()" class="btn-primary" data-id="previewBtn">Preview CV</button>
+    <a href="assets/cv.pdf" class="btn-outline" download onclick="trackDownload()">Download CV</a>
+  </div>
+
+  <p class="counter">
+    Downloaded <span id="downloadCount">0</span> times
+  </p>
+</section>
+
+<section class="section">
+  <h2 data-id="aboutTitle">Tentang Saya</h2>
+  <p data-id="aboutDesc">
+    Individu yang aktif dalam organisasi, olahraga (Silat & Badminton),
+    serta kegiatan keagamaan dan pengembangan diri.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Pendidikan</h2>
+  <ul>
+    <li>SDN Cempaka Baru 02 (2007–2013)</li>
+    <li>SMP Muhammadiyah 27 Jakarta (2013–2016)</li>
+    <li>SMK Negeri 39 Jakarta (2016–2019)</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Pengalaman</h2>
+  <ul>
+    <li>PKL – PT Asuransi Kredit Indonesia (ASKRINDO)</li>
+    <li>Part Time Event – PT Bumi Daya Plaza</li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 Muhammad Raihan Al-Fadhil
+</footer>
+
+<!-- Preview Modal -->
+<div id="previewModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closePreview()" class="close">&times;</span>
+    <iframe src="assets/cv.pdf"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
